@@ -1,0 +1,26 @@
+# llms.txt for onco.com
+# Project Purpose: Onco.com is a comprehensive cancer care platform providing information and connecting patients with oncologists.
+# Tech Stack: Next.js, React, TypeScript
+# License: This project is proprietary and all rights are reserved.
+# Purpose: Allow AI/LLM crawlers to responsibly access publicly-available pages,
+# including educational content about cancer and other modules.
+
+User-agent: *
+Allow: /
+
+# Block private, temporary, or sensitive directories
+Disallow: /api/
+Disallow: /_next/
+Disallow: /src/
+Disallow: /.github/
+Disallow: /node_modules/
+
+Sitemap: https://www.onco.com/sitemap.xml
+
+# Project Modules:
+# - About Cancer: Provides detailed information about multiple cancer types including
+#   Breast, Ovarian, Throat, Lung, Head and Neck, Bone, Pancreatic, Colon, Liver,
+#   Blood, Testicular, Thyroid, Prostate, Gallbladder, Skin, Bladder, Brain, Stomach.
+# - Blogs: Contains educational articles and news updates.
+#
+# Each module is publicly accessible and intended for educational purposes.
